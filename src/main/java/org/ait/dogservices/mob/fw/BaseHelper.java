@@ -1,19 +1,24 @@
 package org.ait.dogservices.mob.fw;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseHelper {
+    AndroidDriver driver;
 
-    AppiumDriver driver;
+    //AppiumDriver driver;
 
-    public BaseHelper(AppiumDriver driver) {
+    public BaseHelper(AndroidDriver driver) {
         this.driver = driver;
     }
 
@@ -28,6 +33,7 @@ public class BaseHelper {
             driver.findElement(locator).sendKeys(text);
         }
         driver.hideKeyboard();
+       // ((JavascriptExecutor) driver).executeScript("mobile: hideKeyboard");
     }
     public  boolean isElementPresent(By locator){
         return driver.findElements(locator).size()>0;
@@ -35,7 +41,7 @@ public class BaseHelper {
 
     public void swipe(double start, double stop) {
 
-        TouchAction action = new TouchAction<>(driver);
+        TouchAction action = new TouchAction<>((PerformsTouchActions) driver);
 
         Dimension size = driver.manage().window().getSize();
         //get x point
@@ -48,7 +54,7 @@ public class BaseHelper {
                 .release().perform();
     }
     public void swipeInElement(By locator, double startPoint,double stopPoint) {
-        TouchAction action = new TouchAction<>(driver);
+        TouchAction action = new TouchAction<>((PerformsTouchActions) driver);
 
         Dimension size = driver.manage().window().getSize();
 
