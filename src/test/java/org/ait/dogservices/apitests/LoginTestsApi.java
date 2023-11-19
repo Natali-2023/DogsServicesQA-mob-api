@@ -1,20 +1,35 @@
 package org.ait.dogservices.apitests;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.ait.dogservices.api.AuthRequestDto;
 import org.ait.dogservices.api.AuthResponseDto;
 import org.ait.dogservices.api.ErrorDto;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class LoginTestsApi extends TestBaseApi {
+    @BeforeMethod
+            public void precondition(){
+        String username = "nat@mail.com";
+        String password = "Qwerty8888!";
 
-    AuthRequestDto requestDto = AuthRequestDto.builder()
-            .username("nat@mail.com")
-            .password("Qwerty8888!")
-            .build();
+
+        Response authResponse = RestAssured.given()
+                .param("username", username)
+                .param("password", password)
+                .post("login");
+
+    }
+
+      AuthRequestDto requestDto = AuthRequestDto.builder()
+              .username("nat@mail.com")
+              .password("Qwerty8888!")
+              .build();
 
     @Test
     public void loginSuccessTest(){
@@ -30,7 +45,7 @@ public class LoginTestsApi extends TestBaseApi {
         System.out.println(dto.getMessage());
     }
     @Test
-    public void loginWrongEmailTest() {
+    public void loginWrongEmailNegativeTest() {
 
         ErrorDto errorDto = given()
                 .contentType(ContentType.JSON)

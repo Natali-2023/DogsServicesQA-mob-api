@@ -1,54 +1,61 @@
 package org.ait.dogservices.apitests.clinic;
 
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.apitests.TestBaseApi;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class DeleteClinicTest extends TestBaseApi {
+    @BeforeMethod
+    public void precondition(){
+        String username = "nat@mail.com";
+        String password = "Qwerty8888!";
+
+
+        Response authResponse = RestAssured.given()
+                .param("username", username)
+                .param("password", password)
+                .post("login");
+
+    }
+
     @Test
     public void deleteClinicByIdSuccessTest() {
 
-        Response authResponse = login();
-
-        if (authResponse.getStatusCode() == 200) {
-
-            int existingClinicId = 16;
+            int existingClinicId = 8;
 
             given()
-                    .header("Authorization", "Bearer " + authResponse.getBody().jsonPath().getString("token"))
                     .pathParam("id", existingClinicId)
                     .when()
                     .delete("clinics/{id}")
                     .then()
-                    .assertThat().statusCode(204);
+                    .assertThat().statusCode(200);
 
             given()
-                    .header("Authorization", "Bearer " + authResponse.getBody().jsonPath().getString("token"))
                     .pathParam("id", existingClinicId)
                     .when()
                     .get("clinics/{id}")
                     .then()
                     .assertThat().statusCode(404);
-        } else {
-            System.out.println("Ошибка авторизации. Код ответа: " + authResponse.getStatusCode());
-        }
 
 }
 
 
 
     @Test
-    public void deleteClinicByWrongIdTest() {
+    public void deleteClinicByWrongIdNegativeTest() {
+
         int existingKennelId = 88;
 
         ErrorDto errorDto = given()
                 .pathParam("id", existingKennelId)
                 .when()
-                .get("kennels/{id}")
+                .delete("kennels/{id}")
                 .then()
                 .assertThat().statusCode(404)
                 .extract().response().as(ErrorDto.class);

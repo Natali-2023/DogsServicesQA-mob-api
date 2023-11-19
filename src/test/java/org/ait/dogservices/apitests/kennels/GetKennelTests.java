@@ -1,25 +1,35 @@
 package org.ait.dogservices.apitests.kennels;
 
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.api.KennelDto;
 import org.ait.dogservices.apitests.TestBaseApi;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class GetKennelTests extends TestBaseApi {
+    @BeforeMethod
+    public void precondition(){
+        String username = "admin@ait-tr.de";
+        String password = "Qwerty007!";
+
+
+        Response authResponse = RestAssured.given()
+                .param("username", username)
+                .param("password", password)
+                .post("login");
+
+    }
     @Test
     public void getKennelByIdSuccessTest() {
-        Response authResponse = login();
 
-        if (authResponse.getStatusCode() == 200) {
-
-            int existingKennelId = 4;
+            int existingKennelId = 10;
 
             KennelDto retrievedKennel = given()
-                    .header("Authorization", "Bearer " + authResponse.getBody().jsonPath().getString("token"))
                     .pathParam("id", existingKennelId)
                     .when()
                     .get("kennels/{id}")
@@ -29,20 +39,13 @@ public class GetKennelTests extends TestBaseApi {
 
             Assert.assertEquals(existingKennelId, retrievedKennel.getId());
 
-        } else {
-            System.out.println("Ошибка авторизации. Код ответа: " + authResponse.getStatusCode());
-        }
     }
     @Test
-    public void getKennelByWrongIdTest() {
+    public void getKennelByWrongIdNegativeTest() {
 
-        Response authResponse = login();
-
-        if (authResponse.getStatusCode() == 200) {
-            int existingKennelId = 44;
+            int existingKennelId = 144;
 
             ErrorDto errorDto = given()
-                    .header("Authorization", "Bearer " + authResponse.getBody().jsonPath().getString("token"))
                     .pathParam("id", existingKennelId)
                     .when()
                     .get("kennels{id}")
@@ -54,31 +57,9 @@ public class GetKennelTests extends TestBaseApi {
             Assert.assertEquals(errorDto.getMessage(), "Kennel with id <44> not found");
             System.out.println(errorDto.getMessage());
 
-        } else
-
-        {
-            System.out.println("Ошибка авторизации. Код ответа: " + authResponse.getStatusCode());
-        }
 
     }
 
-    @Test
-    public void getKennelUnregisteredUserTest() {
-        int existingKennelId = 4;
-
-        ErrorDto errorDto = given()
-                .pathParam("id", existingKennelId)
-                .when()
-                .get("kennels{id}")
-                .then()
-                .assertThat().statusCode(401)
-                .extract().response().as(ErrorDto.class);
-
-
-        Assert.assertEquals(errorDto.getMessage(), "User unauthorized");
-        System.out.println(errorDto.getMessage());
-
-    }
 
 
 

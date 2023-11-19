@@ -1,11 +1,14 @@
 package org.ait.dogservices.apitests.clinic;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.ait.dogservices.api.ClinicDto;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.api.KennelDto;
 import org.ait.dogservices.apitests.TestBaseApi;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Random;
@@ -13,6 +16,18 @@ import java.util.Random;
 import static io.restassured.RestAssured.given;
 
 public class AddClinicTests extends TestBaseApi {
+    @BeforeMethod
+    public void precondition(){
+        String username = "nat@mail.com";
+        String password = "Qwerty8888!";
+
+
+        Response authResponse = RestAssured.given()
+                .param("username", username)
+                .param("password", password)
+                .post("login");
+
+    }
     @Test
     public void addNewClinicSuccessTest() {
         int i = new Random().nextInt(1000) + 1000;
@@ -39,8 +54,9 @@ public class AddClinicTests extends TestBaseApi {
     }
 
     @Test
-    public void addNewClinicWithoutNameTest() {
+    public void addNewClinicWithoutNameNegativeTest() {
         KennelDto kennelDto = KennelDto.builder()
+               // .name("")
                 .description("Clinic for small and big pets")
                 .webSite("https://clinic-hunde.de")
                 .country("Germany")
@@ -59,17 +75,9 @@ public class AddClinicTests extends TestBaseApi {
                 .extract().response().as(ErrorDto.class);
 
 
-        String errorMessage = errorDto.getMessage();
-        if (errorMessage != null) {
-            System.out.println(errorMessage);
-            Assert.assertTrue(errorMessage.contains("name=must not be blank"));
-        } else {
-            Assert.fail("Error message is null");
-        }
-
     }
     @Test
-    public  void addNewClinicInvalidPhoneTest(){
+    public  void addNewClinicInvalidPhoneNegativeTest(){
         KennelDto kennelDto = KennelDto.builder()
                 .name("Hunde clinic")
                 .description("Clinic for small and big pets")

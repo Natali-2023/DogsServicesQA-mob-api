@@ -1,10 +1,13 @@
 package org.ait.dogservices.apitests.kennels;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.api.KennelDto;
 import org.ait.dogservices.apitests.TestBaseApi;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Random;
@@ -13,6 +16,18 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
 public class AddKennelTests extends TestBaseApi {
+    @BeforeMethod
+    public void precondition(){
+        String username = "admin@ait-tr.de";
+        String password = "Qwerty007!";
+
+
+        Response authResponse = RestAssured.given()
+                .param("username", username)
+                .param("password", password)
+                .post("login");
+
+    }
     @Test
     public void addNewKennelSuccessTest() {
         int i = new Random().nextInt(1000) + 1000;
@@ -38,7 +53,7 @@ public class AddKennelTests extends TestBaseApi {
     }
 
     @Test
-    public void addNewKennelWithoutNameTest() {
+    public void addNewKennelWithoutNameNegativeTest() {
         KennelDto kennelDto = KennelDto.builder()
                 .description("Kennel for small and big dogs")
                 .webSite("https://kennel-hunde.de")
@@ -68,7 +83,7 @@ public class AddKennelTests extends TestBaseApi {
 
     }
     @Test
-    public  void addNewKennelWithInvalidPhoneTest(){
+    public  void addNewKennelWithInvalidPhoneNegativeTest(){
         KennelDto kennelDto = KennelDto.builder()
                 .name("Hunde kennel")
                 .description("Kennel for small and big dogs")

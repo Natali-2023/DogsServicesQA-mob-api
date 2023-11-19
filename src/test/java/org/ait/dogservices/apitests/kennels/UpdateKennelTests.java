@@ -1,52 +1,60 @@
 package org.ait.dogservices.apitests.kennels;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.api.KennelDto;
 import org.ait.dogservices.apitests.TestBaseApi;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class UpdateKennelTests extends TestBaseApi {
+    @BeforeMethod
+    public void precondition(){
+        String username = "nat@mail.com";
+        String password = "Qwerty8888!";
+
+
+        Response authResponse = RestAssured.given()
+                .param("username", username)
+                .param("password", password)
+                .post("login");
+
+    }
 
     @Test
     public void updateKennelByDescription() {
-        Response authResponse = login();
-        if (authResponse.getStatusCode() == 200) {
+            KennelDto kennelDto = KennelDto.builder()
+                    .id(22)
+                    .name("Hunde kennel")
+                    .description("Kennel for small and big dogs")
+                    .webSite("https://kennel-hunde.de")
+                    .country("Germany")
+                    .kennelCity("Berlin")
+                    .postCode("01611")
+                    .address("Pragstrasse 7")
+                    .telephoneNumber("+4917211887987")
+                    .build();
+            String newDescription = "Updated kennel description";
 
-    KennelDto kennelDto = KennelDto.builder()
-            .id(22)
-            .name("Hunde kennel")
-            .description("Kennel for small and big dogs")
-            .webSite("https://kennel-hunde.de")
-            .country("Germany")
-            .kennelCity("Berlin")
-            .postCode("01611")
-            .address("Pragstrasse 7")
-            .telephoneNumber("+4917211887987")
-            .build();
-    String newDescription = "Updated kennel description";
+            kennelDto.setDescription(newDescription);
 
-    kennelDto.setDescription(newDescription);
+            given()
+                    .contentType(ContentType.JSON)
+                    .body(kennelDto)
+                    .when()
+                    .put("kennels/{id}", kennelDto.getId())
+                    .then()
+                    .assertThat().statusCode(200);
 
-    given()
-            .contentType(ContentType.JSON)
-            .body(kennelDto)
-            .when()
-            .put("kennels/{id}",kennelDto.getId())
-            .then()
-            .assertThat().statusCode(200);
+            KennelDto updatedKennel = getKennelById(kennelDto.getId());
+            Assert.assertEquals(newDescription, updatedKennel.getDescription());
 
-    KennelDto updatedKennel = getKennelById(kennelDto.getId());
-    Assert.assertEquals(newDescription,updatedKennel.getDescription());
-
-   } else {
-            System.out.println("Ошибка авторизации. Код ответа: " + authResponse.getStatusCode());
         }
-    }
 
    @Test
     public void updateKennelWebsiteTest() {
@@ -95,7 +103,7 @@ public class UpdateKennelTests extends TestBaseApi {
     }
 
     @Test
-    public void updateKennelByWrongIdTest() {
+    public void updateKennelByWrongIdNegativeTest() {
         int existingKennelId = 88;
 
         ErrorDto errorDto = given()

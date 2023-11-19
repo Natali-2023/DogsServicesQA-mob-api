@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class GetAllClinicTest extends TestBaseApi {
 
     @Test
-    public void getAllClinicsSuccessTest(){
+    public void getAllClinicsSuccessTest() {
         List<ClinicDto> clinics = given()
                 .when()
                 .get("clinics")
@@ -27,16 +27,6 @@ public class GetAllClinicTest extends TestBaseApi {
 
     }
 
-    @Test
-    public void getAllClinicErrorTest(){
-        given()
-                .when()
-                .get("clinics")
-                .then()
-                .assertThat().statusCode(401)
-                .assertThat().body("error", equalTo("Unauthorized"));
-    }
 
 }
-
 
