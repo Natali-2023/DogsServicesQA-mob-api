@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.api.KennelDto;
 import org.ait.dogservices.apitests.TestBaseApi;
+import org.apache.commons.lang3.StringUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -14,6 +15,7 @@ import java.util.Random;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.equalTo;
 
 public class AddKennelTests extends TestBaseApi {
     @BeforeMethod
@@ -64,24 +66,18 @@ public class AddKennelTests extends TestBaseApi {
                 .telephoneNumber("+4917211887121")
                 .build();
 
-        ErrorDto errorDto = given()
+        Response response = given()
                 .contentType(ContentType.JSON)
                 .body(kennelDto)
-                .post("kennels")
-                .then()
-                .assertThat().statusCode(400)
-                .extract().response().as(ErrorDto.class);
+                .post("kennels");
 
-
-        String errorMessage = errorDto.getMessage();
-        if (errorMessage != null) {
-            System.out.println(errorMessage);
-            Assert.assertTrue(errorMessage.contains("name=must not be blank"));
-        } else {
-            Assert.fail("Error message is null");
-        }
-
+        response.then()
+                .statusCode(400)
+                .assertThat()
+                .body("errors[0].field", equalTo("name"))
+                .body("errors[0].message", equalTo("must not be null"));
     }
+
     @Test
     public  void addNewKennelWithInvalidPhoneNegativeTest(){
         KennelDto kennelDto = KennelDto.builder()

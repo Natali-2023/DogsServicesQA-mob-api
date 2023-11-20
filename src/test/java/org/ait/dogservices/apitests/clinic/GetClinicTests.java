@@ -43,7 +43,6 @@ public class GetClinicTests extends TestBaseApi {
 
     @Test
     public void getClinicByWrongIdNegativeTest() {
-
             int existingClinicId = 144;
 
             ErrorDto errorDto = given()
@@ -51,7 +50,7 @@ public class GetClinicTests extends TestBaseApi {
                     .when()
                     .get("clinics{id}")
                     .then()
-                    .assertThat().statusCode(404)
+                   .assertThat().statusCode(404)
                     .extract().response().as(ErrorDto.class);
 
 

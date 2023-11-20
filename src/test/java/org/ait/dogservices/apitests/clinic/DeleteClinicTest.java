@@ -27,7 +27,7 @@ public class DeleteClinicTest extends TestBaseApi {
     @Test
     public void deleteClinicByIdSuccessTest() {
 
-            int existingClinicId = 8;
+            int existingClinicId = 156;
 
             given()
                     .pathParam("id", existingClinicId)

@@ -14,6 +14,9 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.equalTo;
 
 public class AddClinicTests extends TestBaseApi {
     @BeforeMethod
@@ -55,25 +58,27 @@ public class AddClinicTests extends TestBaseApi {
 
     @Test
     public void addNewClinicWithoutNameNegativeTest() {
-        KennelDto kennelDto = KennelDto.builder()
+        ClinicDto clinicDto = ClinicDto.builder()
                // .name("")
                 .description("Clinic for small and big pets")
                 .webSite("https://clinic-hunde.de")
                 .country("Germany")
-                .kennelCity("Berlin")
+                .clinicCity("Berlin")
                 .postCode("01611")
                 .address("Hauptrasse 7")
                 .telephoneNumber("+4917211887121")
                 .build();
 
-        ErrorDto errorDto = given()
+        Response response = given()
                 .contentType(ContentType.JSON)
-                .body(kennelDto)
-                .post("clinics")
-                .then()
-                .assertThat().statusCode(400)
-                .extract().response().as(ErrorDto.class);
+                .body(clinicDto)
+                .post("kennels");
 
+        response.then()
+                .statusCode(400)
+                .assertThat()
+                .body("errors[0].field", equalTo("name"))
+                .body("errors[0].message", equalTo("must not be null"));
 
     }
     @Test
@@ -95,9 +100,7 @@ public class AddClinicTests extends TestBaseApi {
                 .post("clinics")
                 .then()
                 .assertThat().statusCode(400);
-               // .assertThat().body("message.phone",
-                       // containsString("Phone number must contain only digits! And length min 10, max 15!"));
-
+                //.assertThat().body("message.phone", containsString("Phone number must contain only digits! And length min 10, max 15!"));
 
 
 

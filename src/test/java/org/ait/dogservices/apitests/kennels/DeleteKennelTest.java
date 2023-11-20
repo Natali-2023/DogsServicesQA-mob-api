@@ -26,7 +26,7 @@ public class DeleteKennelTest extends TestBaseApi {
     @Test
         public void deleteKennelByIdSuccessTest() {
 
-            int existingKennelId = 45;
+            int existingKennelId = 22;
 
             given()
                     .pathParam("id", existingKennelId)
