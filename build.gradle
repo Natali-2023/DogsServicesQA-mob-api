@@ -25,8 +25,8 @@ dependencies {
     implementation 'io.appium:java-client:7.6.0'
 
 }
-
 test {
-    useTestNG()
-
+    useJUnitPlatform()
+    include '**/org/ait/dogservices/api/**/*Test.class'
 }
+

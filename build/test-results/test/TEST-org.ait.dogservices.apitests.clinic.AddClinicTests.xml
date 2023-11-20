@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.apitests.clinic.AddClinicTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-20T10:29:35" hostname="NATA-BOD" time="0.205">
+  <properties/>
+  <testcase name="addNewClinicInvalidPhoneNegativeTest" classname="org.ait.dogservices.apitests.clinic.AddClinicTests" time="0.205"/>
+  <system-out><![CDATA[11:29:35.214 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://hunde24.online:443
+11:29:35.282 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to hunde24.online:443
+11:29:35.469 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+11:29:35.471 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+11:29:35.471 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+11:29:35.472 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+11:29:35.472 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+11:29:35.472 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/login HTTP/1.1
+11:29:35.472 [Test worker] DEBUG org.apache.http.wire --  >> "POST /api/login HTTP/1.1[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Length: 46[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "Host: hunde24.online[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> POST /api/login HTTP/1.1
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> Accept: */*
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> Content-Length: 46
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> Host: hunde24.online
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+11:29:35.473 [Test worker] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+11:29:35.474 [Test worker] DEBUG org.apache.http.wire --  >> "username=nat%40mail.com&password=Qwerty8888%21"
+11:29:35.596 [Test worker] DEBUG org.apache.http.wire --  << "HTTP/1.1 200 OK[\r][\n]"
+11:29:35.598 [Test worker] DEBUG org.apache.http.wire --  << "Date: Mon, 20 Nov 2023 10:29:33 GMT[\r][\n]"
+11:29:35.599 [Test worker] DEBUG org.apache.http.wire --  << "Content-Type: application/json;charset=ISO-8859-1[\r][\n]"
+11:29:35.599 [Test worker] DEBUG org.apache.http.wire --  << "Content-Length: 30[\r][\n]"
+11:29:35.599 [Test worker] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+11:29:35.599 [Test worker] DEBUG org.apache.http.wire --  << "x-content-type-options: nosniff[\r][\n]"
+11:29:35.599 [Test worker] DEBUG org.apache.http.wire --  << "x-xss-protection: 1; mode=block[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "pragma: no-cache[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "expires: 0[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "strict-transport-security: max-age=31536000 ; includeSubDomains[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "set-cookie: JSESSIONID=CB7DFD57B368F08B498D5244F42EACC1; Path=/; Secure; HttpOnly[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "x-do-app-origin: 07c12a7f-3d06-4134-a066-21a4378cc2fb[\r][\n]"
+11:29:35.600 [Test worker] DEBUG org.apache.http.wire --  << "x-do-orig-status: 200[\r][\n]"
+11:29:35.601 [Test worker] DEBUG org.apache.http.wire --  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+11:29:35.601 [Test worker] DEBUG org.apache.http.wire --  << "Set-Cookie: __cf_bm=Roi3eQhBr_zd0kEsVBEPYTtHfQxZLsiOplsqs57jnk0-1700476173-0-Acd16HUUfQkRhZMbty9Ai02FTQ+ESu5Li7E+A/KwworlkmgPcraRVN7qOSWNeFhdkwLZqOwTT2EfeBiPSQYtskI=; path=/; expires=Mon, 20-Nov-23 10:59:33 GMT; domain=.hunde24.online; HttpOnly; Secure; SameSite=None[\r][\n]"
+11:29:35.601 [Test worker] DEBUG org.apache.http.wire --  << "Server: cloudflare[\r][\n]"
+11:29:35.601 [Test worker] DEBUG org.apache.http.wire --  << "CF-RAY: 8290033678799067-FRA[\r][\n]"
+11:29:35.601 [Test worker] DEBUG org.apache.http.wire --  << "[\r][\n]"
+11:29:35.602 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+11:29:35.602 [Test worker] DEBUG org.apache.http.headers -- << HTTP/1.1 200 OK
+11:29:35.602 [Test worker] DEBUG org.apache.http.headers -- << Date: Mon, 20 Nov 2023 10:29:33 GMT
+11:29:35.602 [Test worker] DEBUG org.apache.http.headers -- << Content-Type: application/json;charset=ISO-8859-1
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << Content-Length: 30
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << Connection: keep-alive
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << x-content-type-options: nosniff
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << x-xss-protection: 1; mode=block
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << cache-control: no-cache, no-store, max-age=0, must-revalidate
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << pragma: no-cache
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << expires: 0
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << strict-transport-security: max-age=31536000 ; includeSubDomains
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << set-cookie: JSESSIONID=CB7DFD57B368F08B498D5244F42EACC1; Path=/; Secure; HttpOnly
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << x-do-app-origin: 07c12a7f-3d06-4134-a066-21a4378cc2fb
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << x-do-orig-status: 200
+11:29:35.603 [Test worker] DEBUG org.apache.http.headers -- << CF-Cache-Status: DYNAMIC
+11:29:35.604 [Test worker] DEBUG org.apache.http.headers -- << Set-Cookie: __cf_bm=Roi3eQhBr_zd0kEsVBEPYTtHfQxZLsiOplsqs57jnk0-1700476173-0-Acd16HUUfQkRhZMbty9Ai02FTQ+ESu5Li7E+A/KwworlkmgPcraRVN7qOSWNeFhdkwLZqOwTT2EfeBiPSQYtskI=; path=/; expires=Mon, 20-Nov-23 10:59:33 GMT; domain=.hunde24.online; HttpOnly; Secure; SameSite=None
+11:29:35.604 [Test worker] DEBUG org.apache.http.headers -- << Server: cloudflare
+11:29:35.604 [Test worker] DEBUG org.apache.http.headers -- << CF-RAY: 8290033678799067-FRA
+11:29:35.608 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+11:29:35.611 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json;charset=ISO-8859-1
+11:29:35.611 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+11:29:35.708 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}->https://hunde24.online:443
+11:29:35.708 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to hunde24.online:443
+11:29:35.760 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+11:29:35.760 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+11:29:35.760 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+11:29:35.760 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+11:29:35.760 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+11:29:35.760 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /api/clinics HTTP/1.1
+11:29:35.760 [Test worker] DEBUG org.apache.http.wire --  >> "POST /api/clinics HTTP/1.1[\r][\n]"
+11:29:35.760 [Test worker] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Length: 226[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "Host: hunde24.online[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> POST /api/clinics HTTP/1.1
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> Accept: */*
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> Content-Length: 226
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> Host: hunde24.online
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+11:29:35.761 [Test worker] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+11:29:35.761 [Test worker] DEBUG org.apache.http.wire --  >> "{"id":0,"name":"Hunde clinic","description":"Clinic for small and big pets","webSite":"https://clinic-hunde.de","country":"Germany","kennelCity":"Berlin","postCode":"01611","address":"Pragstrasse 7","telephoneNumber":"491721"}"
+11:29:35.808 [Test worker] DEBUG org.apache.http.wire --  << "HTTP/1.1 400 Bad Request[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "Date: Mon, 20 Nov 2023 10:29:34 GMT[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "Content-Type: application/json[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "Transfer-Encoding: chunked[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "x-content-type-options: nosniff[\r][\n]"
+11:29:35.809 [Test worker] DEBUG org.apache.http.wire --  << "x-xss-protection: 1; mode=block[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "pragma: no-cache[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "expires: 0[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "strict-transport-security: max-age=31536000 ; includeSubDomains[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "x-do-app-origin: 07c12a7f-3d06-4134-a066-21a4378cc2fb[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "x-do-orig-status: 400[\r][\n]"
+11:29:35.810 [Test worker] DEBUG org.apache.http.wire --  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+11:29:35.811 [Test worker] DEBUG org.apache.http.wire --  << "Set-Cookie: __cf_bm=4n6UN_BQ37weBIfX7dCOVLWDca_S4H4_NpA.F5gjh1Q-1700476174-0-AeKRYM0HzxCtVGKYsicPz07rW1Juq8kAwnlU1SgYcTRONCeldZUfF2M9TR8a3DnSpMrWiFS5N9abEbqPpPs04+I=; path=/; expires=Mon, 20-Nov-23 10:59:34 GMT; domain=.hunde24.online; HttpOnly; Secure; SameSite=None[\r][\n]"
+11:29:35.811 [Test worker] DEBUG org.apache.http.wire --  << "Server: cloudflare[\r][\n]"
+11:29:35.811 [Test worker] DEBUG org.apache.http.wire --  << "CF-RAY: 829003384da26958-FRA[\r][\n]"
+11:29:35.811 [Test worker] DEBUG org.apache.http.wire --  << "[\r][\n]"
+11:29:35.811 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 400 Bad Request
+11:29:35.811 [Test worker] DEBUG org.apache.http.headers -- << HTTP/1.1 400 Bad Request
+11:29:35.811 [Test worker] DEBUG org.apache.http.headers -- << Date: Mon, 20 Nov 2023 10:29:34 GMT
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << Content-Type: application/json
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << Transfer-Encoding: chunked
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << Connection: keep-alive
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << x-content-type-options: nosniff
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << x-xss-protection: 1; mode=block
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << cache-control: no-cache, no-store, max-age=0, must-revalidate
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << pragma: no-cache
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << expires: 0
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << strict-transport-security: max-age=31536000 ; includeSubDomains
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << x-do-app-origin: 07c12a7f-3d06-4134-a066-21a4378cc2fb
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << x-do-orig-status: 400
+11:29:35.812 [Test worker] DEBUG org.apache.http.headers -- << CF-Cache-Status: DYNAMIC
+11:29:35.813 [Test worker] DEBUG org.apache.http.headers -- << Set-Cookie: __cf_bm=4n6UN_BQ37weBIfX7dCOVLWDca_S4H4_NpA.F5gjh1Q-1700476174-0-AeKRYM0HzxCtVGKYsicPz07rW1Juq8kAwnlU1SgYcTRONCeldZUfF2M9TR8a3DnSpMrWiFS5N9abEbqPpPs04+I=; path=/; expires=Mon, 20-Nov-23 10:59:34 GMT; domain=.hunde24.online; HttpOnly; Secure; SameSite=None
+11:29:35.813 [Test worker] DEBUG org.apache.http.headers -- << Server: cloudflare
+11:29:35.813 [Test worker] DEBUG org.apache.http.headers -- << CF-RAY: 829003384da26958-FRA
+11:29:35.819 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+11:29:35.820 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json
+11:29:35.820 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
