@@ -35,8 +35,4 @@ task qa(type:Test) {
         systemProperty 'browser', "${browser}"
     }
 }
-test {
-     useJUnitPlatform()
-     include '**/org/ait/dogservices/api/**/*Test.class'
-}
 
