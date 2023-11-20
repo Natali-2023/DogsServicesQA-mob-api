@@ -25,8 +25,18 @@ dependencies {
     implementation 'io.appium:java-client:7.6.0'
 
 }
+
 test {
-    useJUnitPlatform()
-    include '**/org/ait/dogservices/api/**/*Test.class'
+    useTestNG()
+}
+task qa(type:Test) {
+    useTestNG()
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
+test {
+     useJUnitPlatform()
+     include '**/org/ait/dogservices/api/**/*Test.class'
 }
 
