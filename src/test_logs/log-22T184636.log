@@ -1,0 +1,12 @@
+15082 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test isFacebookComponentPresentTest with data: []
+16865 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: isFacebookComponentPresentTest
+16865 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+16865 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************
+31565 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test isInstagramComponentPresentTest with data: []
+33347 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: isInstagramComponentPresentTest
+33348 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+33349 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************
+47849 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test isYoutubeComponentPresentTest with data: []
+49224 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- FAILED: isYoutubeComponentPresentTest
+49224 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+49224 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

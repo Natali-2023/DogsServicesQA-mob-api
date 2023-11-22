@@ -1,0 +1,4 @@
+15331 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test isFacebookComponentPresentTest with data: []
+17261 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: isFacebookComponentPresentTest
+17261 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+17263 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

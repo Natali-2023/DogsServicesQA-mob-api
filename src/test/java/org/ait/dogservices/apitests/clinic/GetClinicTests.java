@@ -50,11 +50,11 @@ public class GetClinicTests extends TestBaseApi {
                     .when()
                     .get("clinics{id}")
                     .then()
-                   .assertThat().statusCode(404)
+                   .assertThat().statusCode(401)
                     .extract().response().as(ErrorDto.class);
 
 
-            Assert.assertEquals(errorDto.getMessage(), "Clinic with id <144> not found");
+            Assert.assertEquals(errorDto.getMessage(), "User unauthorized");
             System.out.println(errorDto.getMessage());
 
 

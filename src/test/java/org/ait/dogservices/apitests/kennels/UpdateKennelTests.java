@@ -3,6 +3,7 @@ package org.ait.dogservices.apitests.kennels;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.ait.dogservices.api.ClinicDto;
 import org.ait.dogservices.api.ErrorDto;
 import org.ait.dogservices.api.KennelDto;
 import org.ait.dogservices.apitests.TestBaseApi;
@@ -29,7 +30,7 @@ public class UpdateKennelTests extends TestBaseApi {
     @Test
     public void updateKennelByDescription() {
             KennelDto kennelDto = KennelDto.builder()
-                    .id(22)
+                    .id(23)
                     .name("Hunde kennel")
                     .description("Kennel for small and big dogs")
                     .webSite("https://kennel-hunde.de")
@@ -39,6 +40,7 @@ public class UpdateKennelTests extends TestBaseApi {
                     .address("Pragstrasse 7")
                     .telephoneNumber("+4917211887987")
                     .build();
+
             String newDescription = "Updated kennel description";
 
             kennelDto.setDescription(newDescription);

@@ -77,7 +77,7 @@ public class AddClinicTests extends TestBaseApi {
         response.then()
                 .statusCode(400)
                 .assertThat()
-                .body("errors[0].field", equalTo("name"))
+                .body("errors[0].field", equalTo("kennelCity"))
                 .body("errors[0].message", equalTo("must not be null"));
 
     }

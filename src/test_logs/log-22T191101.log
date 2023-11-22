@@ -1,0 +1,4 @@
+16507 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test isYoutubeComponentPresentTest with data: []
+18275 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: isYoutubeComponentPresentTest
+18276 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+18276 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

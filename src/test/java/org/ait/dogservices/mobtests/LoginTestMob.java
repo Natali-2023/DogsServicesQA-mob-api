@@ -12,6 +12,7 @@ public class LoginTestMob extends TestBaseMob{
         app.getHomePageHelper().tapOnLoginButton();
         app.getHomePageHelper().enterEmail("bodnata.o@gmail.com");
         app.getHomePageHelper().enterPassword("Aqwert008!");
+        app.getHomePageHelper().pause(1000);
         app.getHomePageHelper().tapOnLoginSubmit();
 
         Assert.assertTrue(app.getHomePageHelper().isHelloPresent());

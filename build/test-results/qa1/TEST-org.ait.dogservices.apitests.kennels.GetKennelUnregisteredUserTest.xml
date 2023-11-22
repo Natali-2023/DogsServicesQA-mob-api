@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.apitests.kennels.GetKennelUnregisteredUserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-20T12:07:46" hostname="NATA-BOD" time="0.091">
+  <properties/>
+  <testcase name="getKennelUnregisteredUserNegativeTest" classname="org.ait.dogservices.apitests.kennels.GetKennelUnregisteredUserTest" time="0.091"/>
+  <system-out><![CDATA[User unauthorized
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

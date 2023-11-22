@@ -1,0 +1,4 @@
+685  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewClinicWithoutNameNegativeTest with data: []
+2549 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewClinicWithoutNameNegativeTest
+2550 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2550 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

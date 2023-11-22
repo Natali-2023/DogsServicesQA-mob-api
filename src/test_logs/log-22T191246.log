@@ -1,0 +1,4 @@
+15313 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test getAllKennelsTest with data: []
+17705 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: getAllKennelsTest
+17705 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+17706 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

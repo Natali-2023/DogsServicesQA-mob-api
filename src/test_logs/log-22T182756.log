@@ -1,0 +1,4 @@
+15719 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test getAllClinicsTest with data: []
+23662 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- FAILED: getAllClinicsTest
+23662 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+23662 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

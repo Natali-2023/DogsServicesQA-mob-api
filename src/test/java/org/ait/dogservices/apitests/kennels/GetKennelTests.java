@@ -50,11 +50,11 @@ public class GetKennelTests extends TestBaseApi {
                     .when()
                     .get("kennels{id}")
                     .then()
-                    .assertThat().statusCode(404)
+                    .assertThat().statusCode(401)
                     .extract().response().as(ErrorDto.class);
 
 
-            Assert.assertEquals(errorDto.getMessage(), "Kennel with id <44> not found");
+            Assert.assertEquals(errorDto.getMessage(), "User unauthorized");
             System.out.println(errorDto.getMessage());
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.apitests.kennels.UpdateKennelTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-21T23:41:01" hostname="NATA-BOD" time="0.386">
+  <properties/>
+  <testcase name="updateKennelByDescription" classname="org.ait.dogservices.apitests.kennels.UpdateKennelTests" time="0.386"/>
+  <system-out><![CDATA[00:40:59.884 [Test worker] INFO  o.a.dogservices.apitests.TestBaseApi -- Start test updateKennelByDescription with data: []
+00:41:01.523 [Test worker] INFO  o.a.dogservices.apitests.TestBaseApi -- PASSED: updateKennelByDescription
+00:41:01.523 [Test worker] INFO  o.a.dogservices.apitests.TestBaseApi -- Stop test
+00:41:01.523 [Test worker] ERROR o.a.dogservices.apitests.TestBaseApi -- *********************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

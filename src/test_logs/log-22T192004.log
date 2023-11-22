@@ -1,0 +1,4 @@
+16316 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test registrationDogLoverPositiveTest with data: []
+67613 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- FAILED: registrationDogLoverPositiveTest
+67614 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+67614 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

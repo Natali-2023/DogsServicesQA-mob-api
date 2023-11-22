@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" verbose="1" >
+
+    <test name="Regression" >
+        <classes>
+            <class name="org.ait.dogservices.mobtests.ClinicTests" />
+            <class name="org.ait.dogservices.mobtests.KennelsTest">
+                <methods>
+                    <exclude name=".*ByCity.*"/>
+                </methods>
+            </class>
+            <class name="org.ait.dogservices.mobtests.AboutTest" >
+            </class>
+            <class name="org.ait.dogservices.mobtests.ContactTest" />
+        </classes>
+    </test>
+
+</suite>

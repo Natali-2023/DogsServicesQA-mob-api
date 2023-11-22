@@ -1,0 +1,4 @@
+697  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewClinicWithoutNameNegativeTest with data: []
+2726 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: addNewClinicWithoutNameNegativeTest
+2726 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2726 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

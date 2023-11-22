@@ -1,0 +1,4 @@
+15852 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test isAboutComponentPresentTest with data: []
+17286 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: isAboutComponentPresentTest
+17286 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+17286 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

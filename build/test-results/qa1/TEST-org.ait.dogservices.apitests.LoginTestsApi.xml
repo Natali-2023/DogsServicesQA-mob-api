@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.apitests.LoginTestsApi" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-20T12:07:38" hostname="NATA-BOD" time="1.404">
+  <properties/>
+  <testcase name="loginSuccessTest" classname="org.ait.dogservices.apitests.LoginTestsApi" time="1.177"/>
+  <testcase name="loginWrongEmailNegativeTest" classname="org.ait.dogservices.apitests.LoginTestsApi" time="0.225"/>
+  <system-out><![CDATA[Login successful
+Incorrect username or password
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

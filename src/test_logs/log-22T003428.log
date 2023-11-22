@@ -1,0 +1,4 @@
+713  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelWithInvalidPhoneNegativeTest with data: []
+2049 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: addNewKennelWithInvalidPhoneNegativeTest
+2049 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2049 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

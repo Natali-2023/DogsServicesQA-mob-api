@@ -1,0 +1,4 @@
+703  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByDescription with data: []
+2342 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelByDescription
+2342 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2342 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

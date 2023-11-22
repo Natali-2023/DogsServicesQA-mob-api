@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.ait.dogservices.apitests.clinic.AddClinicTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-20T12:07:40" hostname="NATA-BOD" time="1.243">
+  <properties/>
+  <testcase name="addNewClinicInvalidPhoneNegativeTest" classname="org.ait.dogservices.apitests.clinic.AddClinicTests" time="0.123"/>
+  <testcase name="addNewClinicSuccessTest" classname="org.ait.dogservices.apitests.clinic.AddClinicTests" time="0.539"/>
+  <testcase name="addNewClinicWithoutNameNegativeTest" classname="org.ait.dogservices.apitests.clinic.AddClinicTests" time="0.182"/>
+  <system-out><![CDATA[null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

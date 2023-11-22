@@ -1,0 +1,4 @@
+724  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getAllKennelsSuccessTest with data: []
+2053 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getAllKennelsSuccessTest
+2054 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2054 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

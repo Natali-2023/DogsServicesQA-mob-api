@@ -1,0 +1,4 @@
+20606 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test loginPositiveTest with data: []
+51454 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- FAILED: loginPositiveTest
+51454 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+51455 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

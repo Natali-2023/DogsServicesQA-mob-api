@@ -1,0 +1,4 @@
+725  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByIdSuccessTest with data: []
+3014 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByIdSuccessTest
+3015 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3015 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

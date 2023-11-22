@@ -1,0 +1,4 @@
+699  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteClinicByIdSuccessTest with data: []
+2644 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: deleteClinicByIdSuccessTest
+2644 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2644 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

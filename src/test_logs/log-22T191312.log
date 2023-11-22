@@ -1,0 +1,4 @@
+16274 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test getKennelsByCityTest with data: []
+20868 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: getKennelsByCityTest
+20869 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+20869 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

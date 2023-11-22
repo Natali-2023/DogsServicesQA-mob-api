@@ -1,0 +1,4 @@
+714  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getClinicByWrongIdNegativeTest with data: []
+2129 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: getClinicByWrongIdNegativeTest
+2129 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2129 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

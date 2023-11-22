@@ -1,0 +1,104 @@
+790  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test loginSuccessTest with data: []
+2015 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: loginSuccessTest
+2016 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2016 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2019 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test loginWrongEmailNegativeTest with data: []
+2298 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: loginWrongEmailNegativeTest
+2298 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2299 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2302 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewClinicInvalidPhoneNegativeTest with data: []
+2674 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewClinicInvalidPhoneNegativeTest
+2675 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2675 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2676 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewClinicSuccessTest with data: []
+3507 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewClinicSuccessTest
+3508 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3508 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3510 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewClinicWithoutNameNegativeTest with data: []
+3962 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: addNewClinicWithoutNameNegativeTest
+3963 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3963 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3965 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteClinicByIdSuccessTest with data: []
+4618 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteClinicByIdSuccessTest
+4619 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4619 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4622 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteClinicByWrongIdNegativeTest with data: []
+4991 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteClinicByWrongIdNegativeTest
+4991 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4991 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4993 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getAllClinicsSuccessTest with data: []
+5202 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getAllClinicsSuccessTest
+5202 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5202 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5204 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getClinicByIdSuccessTest with data: []
+5527 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getClinicByIdSuccessTest
+5527 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5528 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5529 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getClinicByWrongIdNegativeTest with data: []
+5883 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: getClinicByWrongIdNegativeTest
+5883 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5883 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5886 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getClinicUnregisteredUserNegativeTest with data: []
+5995 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getClinicUnregisteredUserNegativeTest
+5996 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5996 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5998 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateClinicByIdDescription with data: []
+6546 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateClinicByIdDescription
+6546 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+6547 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+6550 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateClinicByIdWebsiteTest with data: []
+6954 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateClinicByIdWebsiteTest
+6954 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+6955 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+6957 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateClinicByWrongIdNegativeTest with data: []
+7313 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateClinicByWrongIdNegativeTest
+7314 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+7314 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+7316 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelSuccessTest with data: []
+7603 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewKennelSuccessTest
+7603 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+7603 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+7604 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelWithInvalidPhoneNegativeTest with data: []
+8022 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: addNewKennelWithInvalidPhoneNegativeTest
+8022 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+8023 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+8025 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelWithoutNameNegativeTest with data: []
+8351 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewKennelWithoutNameNegativeTest
+8352 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+8352 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+8353 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByIdSuccessTest with data: []
+8889 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByIdSuccessTest
+8890 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+8890 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+8892 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByWrongIdNegativeTest with data: []
+9258 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByWrongIdNegativeTest
+9258 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+9258 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+9260 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getAllKennelsSuccessTest with data: []
+9392 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getAllKennelsSuccessTest
+9392 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+9392 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+9394 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByIdSuccessTest with data: []
+9759 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelByIdSuccessTest
+9759 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+9759 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+9760 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByWrongIdNegativeTest with data: []
+10061 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: getKennelByWrongIdNegativeTest
+10061 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+10061 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+10062 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelUnregisteredUserNegativeTest with data: []
+10174 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelUnregisteredUserNegativeTest
+10174 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+10174 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+10178 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByDescription with data: []
+10459 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: updateKennelByDescription
+10460 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+10460 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+10461 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByWrongIdNegativeTest with data: []
+10776 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelByWrongIdNegativeTest
+10776 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+10776 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+10777 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelWebsiteTest with data: []
+11360 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelWebsiteTest
+11360 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+11360 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

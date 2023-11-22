@@ -1,0 +1,4 @@
+711  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByWrongIdNegativeTest with data: []
+2058 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelByWrongIdNegativeTest
+2059 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2059 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
