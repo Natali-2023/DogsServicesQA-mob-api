@@ -7,7 +7,7 @@
             <class name="org.ait.dogservices.mobtests.ClinicTests" />
             <class name="org.ait.dogservices.mobtests.KennelsTest">
                 <methods>
-                    <exclude name=".*ByCity.*"/>
+                    <exclude name=".*City.*"/>
                 </methods>
             </class>
             <class name="org.ait.dogservices.mobtests.AboutTest" >
