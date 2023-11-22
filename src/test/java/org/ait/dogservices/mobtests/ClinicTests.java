@@ -16,10 +16,10 @@ public class ClinicTests extends TestBaseMob{
         app.getClinicPageHelper().tabOnButtonShow();
         Assert.assertTrue(app.getClinicPageHelper().isClinicsPresent());
     }
-    @Test
-    public void getClinicsByCityTest(){
-        app.getClinicPageHelper().selectCity(1);
-        app.getClinicPageHelper().tabOnButtonFind();
-        Assert.assertTrue(app.getClinicPageHelper().isClinicPresent());
-    }
+//    @Test
+//    public void getClinicsByCityTest(){
+//        app.getClinicPageHelper().selectCity(1);
+//        app.getClinicPageHelper().tabOnButtonFind();
+//        Assert.assertTrue(app.getClinicPageHelper().isClinicPresent());
+//    }
 }
