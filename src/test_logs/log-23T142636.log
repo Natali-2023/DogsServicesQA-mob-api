@@ -1,0 +1,48 @@
+762  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelSuccessTest with data: []
+2522 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewKennelSuccessTest
+2522 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2522 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2526 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelWithInvalidPhoneNegativeTest with data: []
+2871 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- FAILED: addNewKennelWithInvalidPhoneNegativeTest
+2871 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2872 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2874 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelWithoutNameNegativeTest with data: []
+3270 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewKennelWithoutNameNegativeTest
+3270 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3270 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3274 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByIdSuccessTest with data: []
+3844 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByIdSuccessTest
+3844 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3844 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3846 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByWrongIdNegativeTest with data: []
+4147 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByWrongIdNegativeTest
+4147 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4147 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4149 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getAllKennelsSuccessTest with data: []
+4336 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getAllKennelsSuccessTest
+4336 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4337 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4339 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByIdSuccessTest with data: []
+4611 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelByIdSuccessTest
+4611 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4611 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4612 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByWrongIdNegativeTest with data: []
+4917 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelByWrongIdNegativeTest
+4918 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4918 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4919 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelUnregisteredUserNegativeTest with data: []
+5010 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelUnregisteredUserNegativeTest
+5010 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5010 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5012 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByDescription with data: []
+5407 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelByDescription
+5407 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5407 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5409 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByWrongIdNegativeTest with data: []
+5696 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelByWrongIdNegativeTest
+5696 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5696 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5697 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelWebsiteTest with data: []
+6333 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelWebsiteTest
+6333 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+6333 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

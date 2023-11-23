@@ -1,0 +1,44 @@
+736  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelSuccessTest with data: []
+2496 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewKennelSuccessTest
+2496 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2496 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2499 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test addNewKennelWithoutNameNegativeTest with data: []
+2893 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: addNewKennelWithoutNameNegativeTest
+2893 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2894 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+2897 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByIdSuccessTest with data: []
+3452 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByIdSuccessTest
+3452 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3452 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3454 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test deleteKennelByWrongIdNegativeTest with data: []
+3756 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: deleteKennelByWrongIdNegativeTest
+3756 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3756 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3759 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getAllKennelsSuccessTest with data: []
+3945 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getAllKennelsSuccessTest
+3945 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+3945 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+3947 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByIdSuccessTest with data: []
+4265 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelByIdSuccessTest
+4265 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4265 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4267 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelByWrongIdNegativeTest with data: []
+4537 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelByWrongIdNegativeTest
+4538 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4538 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4539 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test getKennelUnregisteredUserNegativeTest with data: []
+4645 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: getKennelUnregisteredUserNegativeTest
+4645 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+4645 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+4647 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByDescription with data: []
+5139 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelByDescription
+5140 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5140 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5141 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelByWrongIdNegativeTest with data: []
+5418 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelByWrongIdNegativeTest
+5418 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5418 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+5420 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test updateKennelWebsiteTest with data: []
+5932 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: updateKennelWebsiteTest
+5932 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+5932 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

@@ -1,0 +1,4 @@
+33553 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test getDogSittersByCityTest with data: []
+40266 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- FAILED: getDogSittersByCityTest
+40266 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+40267 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************

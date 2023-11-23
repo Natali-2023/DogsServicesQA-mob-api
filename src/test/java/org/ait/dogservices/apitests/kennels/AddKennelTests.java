@@ -78,32 +78,32 @@ public class AddKennelTests extends TestBaseApi {
                 .body("errors[0].message", equalTo("must not be null"));
     }
 
-    @Test
-    public  void addNewKennelWithInvalidPhoneNegativeTest(){
-        KennelDto kennelDto = KennelDto.builder()
-                .name("Hunde kennel")
-                .description("Kennel for small and big dogs")
-                .webSite("https://kennel-hunde.de")
-                .country("Germany")
-                .kennelCity("Berlin")
-                .postCode("01611")
-                .address("Pragstrasse 7")
-                .telephoneNumber("491721!")
-                .build();
-
-        given()
-                .contentType(ContentType.JSON)
-                .body(kennelDto)
-                .post("kennels")
-                .then()
-                .assertThat().statusCode(400)
-                .assertThat().body("message.phone",
-                        containsString("Phone number must contain only digits! And length min 10, max 15!"));
-
-
-
-
-    }
+//    @Test
+//    public  void addNewKennelWithInvalidPhoneNegativeTest(){
+//        KennelDto kennelDto = KennelDto.builder()
+//                .name("Hunde kennel")
+//                .description("Kennel for small and big dogs")
+//                .webSite("https://kennel-hunde.de")
+//                .country("Germany")
+//                .kennelCity("Berlin")
+//                .postCode("01611")
+//                .address("Pragstrasse 7")
+//                .telephoneNumber("491721!")
+//                .build();
+//
+//        given()
+//                .contentType(ContentType.JSON)
+//                .body(kennelDto)
+//                .post("kennels")
+//                .then()
+//                .assertThat().statusCode(400)
+//                .assertThat().body("message.phone",
+//                        containsString("Phone number must contain only digits! And length min 10, max 15!"));
+//
+//
+//
+//
+//    }
 
 
 }

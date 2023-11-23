@@ -49,6 +49,7 @@ The platform offers features such as finding dog sitters, locating veterinary cl
          `POST /api/registerUser/{dogLover-id}/dogSitters`
          `GET /api/registerUser/{dogLover-id}/dogSitters`
          `POST /api/registerUser`
+         `GET /api/registerUser/dogLov-id/{loveId}/dogSid/{sitId}`
 
 - **Testing Scenarios:**
     - Positive and negative scenarios for each API endpoint

@@ -1,0 +1,8 @@
+648  [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test loginSuccessTest with data: []
+1889 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: loginSuccessTest
+1889 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+1889 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************
+1893 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Start test loginWrongEmailNegativeTest with data: []
+2113 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- PASSED: loginWrongEmailNegativeTest
+2114 [Test worker] INFO  o.a.d.apitests.TestBaseApi -- Stop test
+2115 [Test worker] ERROR o.a.d.apitests.TestBaseApi -- *********************************************

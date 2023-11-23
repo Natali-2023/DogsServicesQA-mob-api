@@ -1,0 +1,4 @@
+26856 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Start test launchAppTest with data: []
+30386 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- PASSED: launchAppTest
+30386 [Test worker] INFO  o.a.d.mobtests.TestBaseMob -- Stop test
+30386 [Test worker] ERROR o.a.d.mobtests.TestBaseMob -- *********************************************
