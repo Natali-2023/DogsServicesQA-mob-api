@@ -57,11 +57,6 @@ The platform offers features such as finding dog sitters, locating veterinary cl
 
 Additionally, load testing has been performed using Postman to assess the performance and scalability of the API under different levels of simulated traffic.
 
-- **Reports:**
-    - [Postman Collection Report](https://drive.google.com/drive/folders/1dqi6MLJIpFadG1taMdij2mLhXbm3HCdl?usp=sharing)
-    - [Jenkins Test Report API](https://drive.google.com/drive/folders/1xU8mQksEdFiBaQChuh5CC1qkNjY3nseH?usp=sharing)
-    - [Postman Load Testing Report](https://drive.google.com/drive/folders/1h53O1gUSj2cbSYqi5oZLKSUH01gVKIvZ?usp=sharing)
-
 #### Mobile Testing
 - **Tools Used:**
     - IntelliJ IDEA
@@ -72,9 +67,6 @@ Additionally, load testing has been performed using Postman to assess the perfor
     - Android Driver
     - Xiaomi Redmi 8T (Android version: 11RKQ1.201004.002)
   
-- **Reports:**
-    - [Appium Collection Report](https://drive.google.com/drive/folders/1elK1WbXRLjJH_yYSXYVIRyK6_V3jcKy_?usp=sharing)
-    - [Jenkins Test Report Mob](https://drive.google.com/drive/folders/1UcLpHtNuSc6dUMf_AExB2jQalP3TEno0?usp=sharing)
 - **Testing Scenarios:**
     - Basic functionality testing of the cross-browser website.
 
@@ -86,24 +78,20 @@ Additionally, load testing has been performed using Postman to assess the perfor
 
 - **Testing Scenarios:**
     - Positive and negative scenarios
+ 
+      ### Reports:
+  Reports and Bug Reports
+  · TestPlan you can look here: [TestPlan](https://drive.google.com/drive/folders/1X6AEBCjapAhLtlJOGG1TZvwBwpjebj8E?usp=sharing)
+  . Specification of the project look here: [specification](https://docs.google.com/document/d/1MhEywOaZgZV2H8nt1kC2nSFHZLJkqHev/edit?usp=sharing&ouid=107159386401864051408&rtpof=true&sd=true)
+  · Test items were made using MindMup: [testItems1](https://drive.google.com/file/d/1E0OYOPirQnJzSiN_agZFYP8w1WacsrL-/view?usp=sharing)
+  [testItems2](https://drive.google.com/file/d/1aPwI9o_U9QyNsUAfkyr-vGz5bzivq6Yu/view?usp=sharing)
+  [stateTransitionDiagram](https://drive.google.com/file/d/1ip7VUccSgNJDwygLA7H8heAsPU8lotOk/view?usp=sharing)
+  Test reports are done using IntelliJ IDEA: [test_logs_IntelliJi](https://drive.google.com/drive/folders/1AQQv6BX0-AqeGcMOXk7-ZeWm_4EcvxIA?usp=sharing)
+  · Bug tracking are done using JIRA: [bugTracking](https://drive.google.com/drive/folders/1qgkIflAhdE7ZyG7723SdD5qsr4QEzcM_?usp=sharing)
+  · Test reports are done using TestLink:  [testLinkReports](https://drive.google.com/drive/folders/11D6jQNUY_bcpcGEJQPQveZ359b7EuuIr?usp=sharing)
 
-- **Reports:**
-    - [Jenkins Test Report UI](https://drive.google.com/drive/folders/1gNH0KdGPR2ygKUES9SH4fK9nW7B4kuGB?usp=sharing)
-
-### Team
-- **Team Lead:** Leonid Usatii
-- **Team Members:**
-    - Nataliia Bodnariuk
-    - Nataliia Pohrebniak
-
-### Additional Resources
-
-- [Test Plan](https://docs.google.com/document/d/1ds1I_9-xMYJ_Q1O-pYhDYksF3QJidNJn/edit?usp=sharing&ouid=103253238846111626832&rtpof=true&sd=true)
-- [Mind Map](https://drive.google.com/file/d/1E0OYOPirQnJzSiN_agZFYP8w1WacsrL-/view?usp=sharing)
-- [State Transition](https://drive.google.com/file/d/1X3UwlAXMFgURSSG5a26IMT85hq1Foo-4/view?usp=sharing)
-- [TestLink](https://testlink.ait-tr.de/index.php)
-- [Jira Bugs](https://drive.google.com/drive/folders/1mSJ4UPvwUZ3R7e_LYrvFoSJBiANVbUNo?usp=sharing)
-
+Integration with Jenkins
+Automated tests are integrated with Jenkins for regular code checks: [jenkinsReport](https://docs.google.com/document/d/17IDpZEbvjyG9-zVMBauEvj7SUA7nEM7AjU2eRHmd750/edit?usp=sharing)
 
 ### Conclusion
 The Dog Services Automated Testing Project aims to enhance the overall user experience
